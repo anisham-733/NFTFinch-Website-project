@@ -1,0 +1,140 @@
+ <!-- Features Area-->
+ <div class="NFTfinch-howitworks-area  pt-60 pb-60">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8">
+          <div class="section-heading text-center">
+            <h2>How NFT Finch works?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="tab--area">
+            <ul class="nav nav-tabs" id="NFTfinchTab" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="tab--1" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"><span>01</span> Create Marketplace</a></li>
+              <li class="nav-item"><a class="nav-link" id="tab--2" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><span>02</span> Digital Marketing</a></li>
+              <li class="nav-item"><a class="nav-link" id="tab--3" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><span>03</span> Business Solution</a></li>
+            </ul>
+            <div class="tab-content" id="NFTfinchTabContent">
+              <!-- Tab Pane-->
+              <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab-thumb mt-5 ms-lg-5"><img src="../../assets/img/tab-1.jpg"
+                        alt=""></div>
+                  </div>
+
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab--text mt-3 mt-lg-5">
+                      <h6>Design &amp; Development</h6>
+                      <h2 class="mb-3">We provide best design &amp; dev solution.</h2>
+                      <p>It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.</p>
+                      <ul class="list-unstyled">
+                        <li *ngFor = "let name of names"><i class="alert-info bi bi-check" ></i>{{name.design}}</li>
+                        
+                      </ul>
+                      <div class="progress mt-4">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><span class="d-block fz-12">Clients Satisfaction Rate: 90%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Tab Pane-->
+              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab-thumb mt-5 ms-lg-5"><img src="../../assets/img/bg-img/" alt=""></div>
+                  </div>
+
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab--text mt-3 mt-lg-5">
+                      <h6>Digital Marketing</h6>
+                      <h2 class="mb-3">We provide digital marketing solution.</h2>
+                      <p>It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.</p>
+                      <ul class="list-unstyled">
+                        <li *ngFor = "let name of names"><i class="alert-info bi bi-check"></i>{{name.design}}</li>
+                       
+                      </ul>
+                      <div class="progress mt-4">
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><span class="d-block fz-12">Clients Return Rate: 70%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Tab Pane-->
+              <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab-thumb mt-5 ms-lg-5"><img src="../../assets/img/illustrator/bg-2.png"
+                       alt=""></div>
+                  </div>
+                                      
+                  <div class="col-12 col-sm-9 col-md-6">
+                    <div class="tab--text mt-3 mt-lg-5">
+                      <h6>Business Solution</h6>
+                      <h2 class="mb-3">We provide creative business solution.</h2>
+                      <p>It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.</p>
+                      <ul class="list-unstyled">
+                        <li *ngFor = "let name of names"><i class="alert-info bi bi-check"></i>{{name.design}}</li>
+                        
+                      </ul>
+                      <div class="progress mt-4">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div><span class="d-block fz-12">Business Solution Rate: 85%</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Area-->
+  <div class="nftfinch-artist-area pt-60">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-12 col-sm-9 col-md-7 col-lg-3" id="left-card-anim"
+         style="border: 0px solid;">
+
+          <div class="{{leftcard.classname}}" *ngFor = "let leftcard of cards1">
+            <img src="{{leftcard.img}}"/>
+          </div>
+
+          
+
+        </div>     
+
+        <div class="col-12 col-lg-6" style="border: 0px solid;">
+          <div class="section-heading text-center mb-lg-0">
+            <h6 class="text-dark">Who's this for..</h6>
+            <h2>There are many<br/>variations of passages </h2>
+            <p class="text-dark">If you are going to use a passage of Lorem Ipsum</p><a class="btn btn-light mt-4" href="#">Let’s Create Yours <i class="ms-2 bi bi-arrow-right-square"></i></a>
+            <div class="clearfix"></div>
+            <img src="../../assets/img/mobile-mock.png" class="mob-mock wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"/>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-9 col-md-7 col-lg-3" id="right-card-anim" style="border: 0px solid;">
+          
+          <div class="{{rightCard.classname}}" *ngFor = "let rightCard of cards2">
+            <img src="{{rightCard.img}}"/>
+          </div>
+
+          
+        </div>     
+
+      </div>
+    </div>
+  </div>
+
+

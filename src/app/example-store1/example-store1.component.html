@@ -1,0 +1,151 @@
+
+   
+    <!-- Header Area-->
+    <header class="header-area header-2" id="bg-white">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Navbar Brand --><a class="navbar-brand" href="index.html"><img 
+            src="../../assets/img/core-img/logo.png" width="58" alt=""></a>
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#nftfinchNav" aria-controls="nftfinchNav" aria-expanded="false"
+           aria-label="Toggle navigation"><i class="bi bi-grid"></i></button>
+          <!-- Navbar Nav -->
+            <div class="collapse navbar-collapse" id="nftfinchNav">
+              <ul class="navbar-nav navbar-nav-scroll">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Activity</a></li>
+            </ul>
+
+            <!-- Login Button --><a class="btn btn-sm btn-primary" href=""><i class="bi bi-wallet2"></i> &nbsp; Connect Wallet</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mb-120 d-block"></div>
+
+
+    <!-- Product Details Area-->
+    <div class="product-details-area product-details-page" id="slider-x1">
+      <div class="container">
+        <div class="row g-4 g-lg-5 justify-content-center">
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="mb-3 mb-sm-5 position-relative product-details-carousel-wrap">
+              <!-- Carousel -->
+              <div class="product-details-carousel portfolio-img-zoom">
+                <div class="row">  
+                  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+                    <div ngxSlickItem *ngFor="let image of images" class="slide">  
+                      <img src="{{ image.img }}" width="100%" class="rounded">
+                      
+                    </div> 
+                    
+                  </ngx-slick-carousel>  
+                </div>  
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="mb-30 d-block"></div>
+
+
+
+    <!-- Shop Meta-->
+    <div class="shop-meta mb-5">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-12 col-sm-6">
+            <!-- Total Product View-->
+            <div class="total-product-view fw-bold">Viewing <span class="counter">9 </span>products out of<span> 77</span></div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <!-- Sorting Data-->
+            <select class="form-select ms-sm-auto fw-bold" aria-label="Default select example">
+              <option selected>Popularity</option>
+              <option value="1">Newest</option>
+              <option value="2">Sales</option>
+              <option value="3">Ratings</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shop Area-->
+    <div class="shop-area shop-fullwidth" >
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+
+          <!-- Single Shop Card -->
+          <div class="col-12 col-sm-6 col-lg-3" *ngFor = "let prod of shopCards">
+            <div class="card shop-card">
+              <div class="product-img-wrap"><img class="card-img-top" 
+                 src="{{ prod.img }}" alt="">
+                <!-- Love Products--><a class="love-product" href="#" data-bs-toggle="tooltip" 
+                data-bs-placement="right" title="Like 14"><i class="bi bi-heart"></i></a>
+              </div>
+              <div class="product-meta d-flex align-items-center justify-content-between pb-0 p-4">
+                <div class="product-name">
+                  <h6>Photo Frame</h6>
+                  <h5>Ethnic & Vibrant Rajasthani Photo Frame</h5>
+                </div>
+                <div class="product-add-to-cart align-items-center justify-content-between" 
+                id="nft-p-det">
+                  <h4>Min Bid</h4>
+                  <h5><i class="fa-brands fa-ethereum"></i> 0.19</h5>
+                  <p><i class="bi bi-circle"></i> 7 days left</p>
+                </div>
+              </div>
+              <a href="" class="p-4 pt-0 buy-n-fw-link">Buy Now <i class="bi bi-caret-right-fill"></i></a>
+            </div>
+          </div>
+          <!-- </div> -->
+
+
+    <!-- Pagination Area-->
+    <div class="saasbox-pagination-area mt-5">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item active" ><a class="page-link" href="#">1</a></li>
+          <li class="page-item" *ngFor = "let page of pagination"><a class="page-link" href="#">
+            {{page.id}}</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mb-30 d-block"></div>
+<hr/>
+
+
+
+    <!-- Newsletter Area-->
+    <div class="bottom-cta-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class=" newsletter-card">
+              <div class="card-body">
+                <div class="text-center">
+                  <h2>Start your NFT Marketplace with NFT Finch</h2>
+                  <p class="mb-3">Try NFT Finch for free, and explore all the tools and services you need to start, run,<br/>
+                    and grow your business.
+                    </p>
+                </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-3">
+                      <a href="#" class="btn btn-dark w-100 mt-3 mt-md-0">Create Free</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <div id="scrollTopButton"><i class="bi bi-arrow-up-short"></i></div>
